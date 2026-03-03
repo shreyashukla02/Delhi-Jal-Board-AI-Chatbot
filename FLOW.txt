@@ -1,0 +1,147 @@
+Format: we write the bot’s statement 1st and expected customer response in <>
+
+Dear customer, please select your language. {Hindi/English}
+प्रिय ग्राहक, कृपया अपनी भाषा चुनें।{हिन्दी/अंग्रेज़ी}
+<English>
+
+Welcome to Delhi Jal Board query assistance. Do you want to register a new grievance or want updates on a previously registered grievance?
+Enter new grievance
+View grievance status
+<1. Register new complaint>
+
+Please enter the following details:
+Your name
+Mobile no.
+Email address
+Your address
+
+Enter the address of the grievance. (Address format - House No./Block/Gali No./Colony Name/Landmark/Delhi/Pincode)
+
+
+Select the category of your grievance:
+Water Supply/Sewer Related (CRM)
+Revenue/Bills Related (RMS)
+
+<CRM>
+
+Select a sub-category for your complaint
+Sewer
+Water Supply
+Tanker
+Water Logging
+None of the above, take me to RMS complaints options
+
+
+<1. Sewer>
+Missing of Manhole Cover
+Pits on Road Sewer / Road Construction Sewer
+Repairing Manhole Cover
+Sewer Blockage / Overflow / Leakage
+Sewer Garbage
+Unauthorized Sewer Connection
+
+<2. Water Supply>
+Dirty Water (Contamination)
+Leakages in Water Pipeline
+Low Water Pressure
+No Water Supply
+Pits on Road / Road Construction (water line related)
+Short Water Supply
+Unauthorized Water Connection
+Wastage of Water
+<3. Tanker >
+Water Tanker Required
+Water Tanker – Missed Trip
+<4. Water Logging>
+Water Logging
+
+Enter grievance description   
+
+
+Upload photos/videos related to the grievance, if available.
+
+Your grievance has been registered successfully. You have been assigned the following grievance number through which you can access the progress of your complaint.
+Registered Grievance number: abcd1234
+Kindly save this number for checking in later.
+
+_________________________________________
+
+
+
+<2. View grievance status>
+Please enter the registered grievance number.
+
+Your grievance status: 	Assigned to JE/AE {Name and Contact Details}
+Or
+It has been resolved successfully.
+—----------------------------------------------------------------------------------------------------------------------------
+—----------------------------------------------------------------------------------------------------------------------------
+
+<हिन्दी>
+
+दिल्ली जल बोर्ड प्रश्न सहायता में आपका स्वागत है। क्या आप नई शिकायत दर्ज करना चाहते हैं या पहले दर्ज की गई शिकायत की स्थिति जानना चाहते हैं?
+नई शिकायत दर्ज करें
+शिकायत की स्थिति देखें
+
+<1. नई शिकायत दर्ज करें>
+
+कृपया निम्नलिखित विवरण दर्ज करें:
+आपका नाम
+मोबाइल नंबर
+ईमेल पता
+आपका पता
+
+शिकायत का पता दर्ज करें।(पता प्रारूप - घर संख्या/ब्लॉक/गली संख्या/कॉलोनी का नाम/मुख्य चिन्ह/दिल्ली/पिनकोड)
+
+अपनी शिकायत की श्रेणी चुनें:
+पानी की आपूर्ति/सीवेर संबंधित (CRM)
+राजस्व/बिल संबंधित (RMS)
+
+<CRM>
+
+अपनी शिकायत के लिए एक उप-श्रेणी चुनें
+सीवर
+पानी की आपूर्ति
+टैंकर
+पानी भरना
+उपरोक्त में से कोई नहीं, मुझे RMS शिकायत विकल्पों पर ले जाएँ|
+
+<1. सीवर>
+मैनहोल कवर गायब
+सड़कों पर गड्ढे / सड़क निर्माण सीवर
+मैनहोल कवर की मरम्मत
+सीवर में ब्लॉकेज / ओवरफ़्लो / लीकेज
+सीवर कचरा
+अनधिकृत सीवर कनेक्शन
+
+<2. जल आपूर्ति>
+गंदा पानी (प्रदूषण)
+जल पाइपलाइन में रिसाव
+कम पानी का दबाव
+जल आपूर्ति नहीं
+सड़क पर गड्ढे / सड़क निर्माण (जल लाइन से संबंधित)
+सीमित जल आपूर्ति
+अवैध जल कनेक्शन
+पानी की बर्बादी
+
+<3. टैंकर>
+पानी का टैंकर आवश्यक
+पानी का टैंकर – चूकी हुई यात्रा
+<4. जलभराव>
+जलभराव
+
+शिकायत विवरण दर्ज करें|
+
+यदि उपलब्ध हों तो शिकायत से संबंधित फ़ोटो/वीडियो अपलोड करें।
+
+आपकी शिकायत सफलतापूर्वक दर्ज कर ली गई है। आपको निम्नलिखित शिकायत क्रमांक प्रदान किया गया है जिसके माध्यम से आप अपनी शिकायत की प्रगति की जांच कर सकते हैं।
+दर्ज की गई शिकायत क्रमांक: abcd1234
+कृपया इसे बाद में जांच करने के लिए सुरक्षित रखें।
+_________________________________________
+
+<2. शिकायत की स्थिति देखें>
+कृपया पंजीकृत शिकायत संख्या दर्ज करें।
+
+आपकी शिकायत की स्थिति: 	JE/AE {नाम और संपर्क विवरण} को सौंप दी गई है 
+या
+यह सफलतापूर्वक हल कर दी गई है।

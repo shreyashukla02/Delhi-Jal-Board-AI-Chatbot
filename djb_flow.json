@@ -1,0 +1,158 @@
+{
+  "version": "7.3",
+  "screens": [
+    {
+      "id": "PERSONAL_DETAILS",
+      "title": "Personal Details",
+      "data": {},
+      "layout": {
+        "type": "SingleColumnLayout",
+        "children": [
+          {
+            "type": "Form",
+            "name": "personal_form",
+            "children": [
+              {
+                "type": "TextHeading",
+                "text": "Personal Information"
+              },
+              {
+                "type": "TextInput",
+                "name": "name",
+                "label": "Your Name",
+                "required": true,
+                "input-type": "text",
+                "min-chars": 2
+              },
+              {
+                "type": "TextInput",
+                "name": "mobile",
+                "label": "Mobile Number",
+                "required": true,
+                "input-type": "phone",
+                "helper-text": "10-digit mobile number"
+              },
+              {
+                "type": "TextInput",
+                "name": "email",
+                "label": "Email Address",
+                "required": false,
+                "input-type": "email",
+                "helper-text": "Optional"
+              },
+              {
+                "type": "TextArea",
+                "name": "user_address",
+                "label": "Your Address",
+                "required": true,
+                "helper-text": "Complete residential address"
+              },
+              {
+                "type": "Footer",
+                "label": "Next",
+                "on-click-action": {
+                  "name": "navigate",
+                  "next": {
+                    "type": "screen",
+                    "name": "GRIEVANCE_ADDRESS"
+                  },
+                  "payload": {
+                    "name": "${form.name}",
+                    "mobile": "${form.mobile}",
+                    "email": "${form.email}",
+                    "user_address": "${form.user_address}"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "GRIEVANCE_ADDRESS",
+      "title": "Grievance Location",
+      "data": {
+        "name": {
+          "type": "string",
+          "__example__": "John Doe"
+        },
+        "mobile": {
+          "type": "string",
+          "__example__": "9876543210"
+        },
+        "email": {
+          "type": "string",
+          "__example__": ""
+        },
+        "user_address": {
+          "type": "string",
+          "__example__": "123 Main Street, City"
+        }
+      },
+      "terminal": true,
+      "layout": {
+        "type": "SingleColumnLayout",
+        "children": [
+          {
+            "type": "Form",
+            "name": "grievance_form",
+            "children": [
+              {
+                "type": "TextHeading",
+                "text": "Where is the problem?"
+              },
+              {
+                "type": "TextInput",
+                "name": "house_no",
+                "label": "House No. / Building",
+                "required": true,
+                "input-type": "text"
+              },
+              {
+                "type": "TextInput",
+                "name": "colony",
+                "label": "Colony / Area",
+                "required": true,
+                "input-type": "text"
+              },
+              {
+                "type": "TextInput",
+                "name": "landmark",
+                "label": "Landmark (Optional)",
+                "required": false,
+                "input-type": "text"
+              },
+              {
+                "type": "TextInput",
+                "name": "pincode",
+                "label": "Pincode",
+                "required": true,
+                "input-type": "number",
+                "min-chars": 6,
+                "max-chars": 6
+              },
+              {
+                "type": "Footer",
+                "label": "Submit",
+                "on-click-action": {
+                  "name": "complete",
+                  "payload": {
+                    "name": "${data.name}",
+                    "mobile": "${data.mobile}",
+                    "email": "${data.email}",
+                    "user_address": "${data.user_address}",
+                    "house_no": "${form.house_no}",
+                    "colony": "${form.colony}",
+                    "landmark": "${form.landmark}",
+                    "pincode": "${form.pincode}"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

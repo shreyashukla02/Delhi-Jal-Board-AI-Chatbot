@@ -1,0 +1,251 @@
+✓ MongoDB connected successfully
+  Database: test
+✓ Configuration loaded successfully
+   - Phone ID: 989141577617082
+   - Token: EAAKg2WfsE...
+
+╔════════════════════════════════════════════════════════╗
+║   WhatsApp Grievance Management System - Backend      ║
+╚════════════════════════════════════════════════════════╝
+
+✓ Server is running on port 3000
+✓ Environment: development
+
+📍 Endpoints:
+   - Health: http://localhost:3000/health
+   - Webhook: http://localhost:3000/webhook
+   - JE API: http://localhost:3000/je
+
+🚀 Ready to receive WhatsApp messages!
+
+2025-12-26T10:01:48.785Z - POST /webhook
+📥 Webhook received: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "from": "919999999999",
+                "id": "test_1766743308766",
+                "type": "text",
+                "text": {
+                  "body": "Reset"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+📨 Received message from 919999999999: Reset
+🗑️ Resetting Session for 919999999999
+🆕 Creating New Session for 919999999999
+
+🔘 [BOT BUTTONS to 919999999999]: Welcome to DJB! Select Language / भाषा चुनें:
+   [Button ID: LANG_EN] -> English
+   [Button ID: LANG_HI] -> Hindi
+
+
+2025-12-26T10:01:52.800Z - POST /webhook
+📥 Webhook received: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "from": "919999999999",
+                "id": "test_1766743312792",
+                "type": "text",
+                "text": {
+                  "body": "Hi"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+📨 Received message from 919999999999: Hi
+🗑️ Resetting Session for 919999999999
+🆕 Creating New Session for 919999999999
+
+🔘 [BOT BUTTONS to 919999999999]: Welcome to DJB! Select Language / भाषा चुनें:
+   [Button ID: LANG_EN] -> English
+   [Button ID: LANG_HI] -> Hindi
+
+
+2025-12-26T10:01:56.805Z - POST /webhook
+📥 Webhook received: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "from": "919999999999",
+                "id": "test_1766743316803",
+                "type": "text",
+                "text": {
+                  "body": "LANG_EN"
+                },
+                "interactive": {
+                  "button_reply": {
+                    "id": "LANG_EN",
+                    "title": "Button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+📨 Received message from 919999999999: LANG_EN
+🔄 Session Found: Step = ASK_LANGUAGE | ID: 694e5d1191c3f4536ef253f8
+
+🔘 [BOT BUTTONS to 919999999999]: What would you like to do?
+   [Button ID: MENU_MANUAL] -> Manual Complaint
+   [Button ID: MENU_STATUS] -> Check Status
+   [Button ID: MENU_AI] -> Talk to AI (Fast)
+
+
+2025-12-26T10:02:00.812Z - POST /webhook
+📥 Webhook received: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "from": "919999999999",
+                "id": "test_1766743320807",
+                "type": "text",
+                "text": {
+                  "body": "MENU_AI"
+                },
+                "interactive": {
+                  "button_reply": {
+                    "id": "MENU_AI",
+                    "title": "Button"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+📨 Received message from 919999999999: MENU_AI
+🔄 Session Found: Step = MAIN_MENU | ID: 694e5d1191c3f4536ef253f8
+
+💬 [BOT REPLY to 919999999999]: Hello! I am the DJB AI Assistant.
+Please tell me your problem (also mention your Name and Address).
+
+2025-12-26T10:02:04.821Z - POST /webhook
+📥 Webhook received: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "from": "919999999999",
+                "id": "test_1766743324816",
+                "type": "text",
+                "text": {
+                  "body": "Dirty water is coming."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+📨 Received message from 919999999999: Dirty water is coming.
+🔄 Session Found: Step = AI_CHAT_MODE | ID: 694e5d1191c3f4536ef253f8
+🔍 Sending to AI (Context): {"name":null,"mobile":null,"address":null,"issue":null}
+AI Analysis Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [404 Not Found] models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (/Users/rohit/djb_crm_whatsapp_bot_backend/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async makeRequest (/Users/rohit/djb_crm_whatsapp_bot_backend/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/Users/rohit/djb_crm_whatsapp_bot_backend/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async analyzeComplaint (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/aiService.js:79:20)
+    at async handleAIChatLoop (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/conversationService.js:169:20)
+    at async processStep (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/conversationService.js:99:7)
+    at async handleConversation (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/conversationService.js:39:5)
+    at async processMessages (/Users/rohit/djb_crm_whatsapp_bot_backend/src/controllers/webhookController.js:110:7)
+    at async handleWebhook (/Users/rohit/djb_crm_whatsapp_bot_backend/src/controllers/webhookController.js:56:15) {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+
+💬 [BOT REPLY to 919999999999]: System busy. Please try again.
+
+2025-12-26T10:02:08.831Z - POST /webhook
+📥 Webhook received: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "changes": [
+        {
+          "value": {
+            "messages": [
+              {
+                "from": "919999999999",
+                "id": "test_1766743328825",
+                "type": "text",
+                "text": {
+                  "body": "My name is Rohit, Mobile is 9876543210, and I live in Rohini Sector 16."
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+📨 Received message from 919999999999: My name is Rohit, Mobile is 9876543210, and I live in Rohini Sector 16.
+🔄 Session Found: Step = AI_CHAT_MODE | ID: 694e5d1191c3f4536ef253f8
+🔍 Sending to AI (Context): {"name":null,"mobile":null,"address":null,"issue":null}
+AI Analysis Error: GoogleGenerativeAIFetchError: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent: [404 Not Found] models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+    at handleResponseNotOk (/Users/rohit/djb_crm_whatsapp_bot_backend/node_modules/@google/generative-ai/dist/index.js:434:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async makeRequest (/Users/rohit/djb_crm_whatsapp_bot_backend/node_modules/@google/generative-ai/dist/index.js:403:9)
+    at async generateContent (/Users/rohit/djb_crm_whatsapp_bot_backend/node_modules/@google/generative-ai/dist/index.js:867:22)
+    at async analyzeComplaint (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/aiService.js:79:20)
+    at async handleAIChatLoop (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/conversationService.js:169:20)
+    at async processStep (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/conversationService.js:99:7)
+    at async handleConversation (/Users/rohit/djb_crm_whatsapp_bot_backend/src/services/conversationService.js:39:5)
+    at async processMessages (/Users/rohit/djb_crm_whatsapp_bot_backend/src/controllers/webhookController.js:110:7)
+    at async handleWebhook (/Users/rohit/djb_crm_whatsapp_bot_backend/src/controllers/webhookController.js:56:15) {
+  status: 404,
+  statusText: 'Not Found',
+  errorDetails: undefined
+}
+
+💬 [BOT REPLY to 919999999999]: System busy. Please try again.
+
